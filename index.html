@@ -9,7 +9,17 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
-    
+    <div id="app">
+        {{ message }}
+        <div class="containermail">
+            <ul>
+                <li v-for="element in newmail">
+{{ element }}
+                </li>
+            </ul>
+<button @click="getmail">Genera email</button>
+        </div>
+    </div>
 
     <script src="./js/main.js"></script>
 </body>
